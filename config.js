@@ -1,9 +1,9 @@
 const config = {
     user: "root",
-    password: "root",
-    port: 8889,  //windows : 3306
+    password: "",
+    port: 3306,  //windows : 3306 mac : 8889
     host: "localhost",
-    database: "marvelcharacters"
+    database: "db_favorite"
 }
 
 module.exports = config;

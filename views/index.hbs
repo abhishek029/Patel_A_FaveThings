@@ -1,12 +1,12 @@
-<section id="heroes">
+<section id="row heroes">
     <!-- loop -->
     {{#each avatars}}
-        <div class="hero-container">
-            <a href="/{{name}}">
+        <div class="col-sm-3 hero-container">
+            <a href="/{{title}}">
                 <img src="/images/{{avatar}}" alt="avatar">
             </a>
 
-            <h3 class="hero-name">{{name}}</h3>
+            <h3 class="hero-name">{{title}}</h3>
         </div>
     {{/each}}
 </section>

@@ -5,7 +5,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   // get data from db and send it to route to views/index.hbs page
-  connect.query(`SELECT name, avatar FROM hero`, (err, result) => {
+  connect.query(`SELECT title, avatar FROM tbl_interest`, (err, result) => {
     if(err){
       throw err;
       console.log(err);
@@ -20,7 +20,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/:hero', function(req, res, next) {
   // get data from db and send it to route to views/index.hbs page
-  connect.query(`SELECT * FROM hero WHERE name = "${req.params.hero}"`, (err, result) => {
+  console.log(req.params);
+  connect.query(`SELECT * FROM tbl_interest WHERE title = "${req.params.hero}"`, (err, result) => {
     if(err){
       throw err;
       console.log(err);
