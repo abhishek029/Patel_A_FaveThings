@@ -3,16 +3,13 @@
 html { position: relative; min-height: 100%; }
 
 body { 
-    background: url(/images/dark-honeycomb.png) repeat $bg-color; 
+    background: white; 
     color: $text-color; 
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 50px;
 }
 
-h1, h2, h3, h4, h5, h6 { 
-    font-family: 'Permanent Marker', cursive;
-}
 
 header { background-color: $bg-color; }
 
@@ -48,9 +45,8 @@ footer {
     display: inline-block; 
     text-align: center;
     margin: 0 12px 20px;
-    border: 2px solid white;
-    background: $bg-color;
-
+    padding: 15px;
+    background: rgb(235, 226, 226);
     img { width: 100%; }
 
     h3 { font-size: 1.5rem; padding: 8px;}
