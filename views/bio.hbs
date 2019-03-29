@@ -1,4 +1,12 @@
-<h1>Welcome to {{bioData.name}}'s bio page!</h1>
-<img src="/images/{{bioData.avatar}}" alt="bio image">
-<h3>About {{bioData.name}}</h3>
-<p>{{bioData.bio}}</p>
+<h1 class="col-12 text-center">Language: {{bioData.title}}</h1>
+<section class="row">
+    <div class="col-4">
+        <div class="col">
+            <img class="col" src="/images/{{bioData.avatar}}" alt="bio image">
+        </div>
+    </div>
+    <div class="col-8">
+    <h3 class="col"><a class="interestLink" href="{{bioData.link}}">{{bioData.title}}</a></h3>
+    <p class="col">{{bioData.description}}</p>
+    </div>
+</section>
